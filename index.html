@@ -16,6 +16,7 @@
             <div>
                 <label for="firstname">Your First Name</label>
                 <input type="text" id="firstname" name="firstname">
+                <label for="lastname">Last Name</label>
                 <input type="text" id="lastname" name="lastname">
 
                 <!-- TODO: Create a "lastname" input with type "text" -->
@@ -53,6 +54,7 @@
                     <option value="ID">Idaho</option>
                     <option value="IL">Illinois</option>
                     <option value="IN">Indiana</option>
+                    <option value="KS">Kansas</option>
                     <option value="KY">Kentucky</option>
                     <option value="LA">Louisiana</option>
                     <option value="MA">Massachussets</option>
@@ -99,49 +101,36 @@
             <!-- Todo: City, State, and Zip Inputs -->
 
             <fieldset>
-                <legend>Vacation location</legend>
+                <legend>Your Prefences</legend>
                 <form method="GET" action="results.html"></form>
                 <div>
-                    <input type="radio" value="bahamas" name="location">
-                    <label>Bahamas</label>
+                    <input type="radio" id="aruba" value="Aruba" name="location" checked>
+                    <label for="aruba">Aruba</label>
                     
-                    <input type="radio" value="cancun" name="location">
-                    <label>Cancun</label>
+                    <input type="radio" id="japan" value="Japan" name="location">
+                    <label for="japan">Japan</label>
                     
-                    <input type="radio" value="rockypoint" name="location">
-                    <label>Rocky Point</label>
+                    <input type="radio" id="new-zealand" value="New Zealand" name="location">
+                    <label for="new-zealand">New Zealand</label>
                     
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Favorite color</legend>
-                    <input type="radio" value="blue" name="color">               
-                    <label>Blue</label>
-
-                    <input type="radio" value="pink" name="color">
-                    <label>Pink</label>
-
-                    <input type="radio" value="gray" name="color">
-                    <label>Gray</label>
-                    
-                    <input type="radio" value="black" name="color">
-                    <label>Black</label>
-                    
-                    <input type="radio" value="purple" name="color">
-                    <label>Purple</label>
+                    <input type="color" name="Favorite Color">
                     
             </fieldset>
             <fieldset>
                 <legend>Additional Options</legend>
 
-                <input type="checkbox" value="couplemassage" name="options">
+                <input type="checkbox" value="couplemassage" name="extras">
                 <lable>Couple Massages</lable>
                 
-                <input type="checkbox" value="openbar" name="options">
+                <input type="checkbox" value="openbar" name="extras">
                 <lable>Open Bar</lable>
                 
 
-                <input type="checkbox" value="lakemeadspecial" name="options">
+                <input type="checkbox" value="lakemeadspecial" name="extras">
                 <lable>Swimming with the Fishes</lable>
 
             </fieldset>
@@ -151,8 +140,8 @@
             <!-- TODO: Checkboxes for selecting extra add-ons -->
             
             <!-- TODO: Submit Button -->
-            <section id="button">
-                <button id="submit">Submit</button>
+            <input type="submit" value="Enter the Contest!">
+
             </section>
         </form>
     </main>
