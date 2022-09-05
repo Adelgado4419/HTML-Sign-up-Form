@@ -14,11 +14,17 @@
         <h2>Vacation Contest Sign-Up Form</h2>
         <form method="GET" action="results.html"> <!-- not sure if acton="results.html" goes here -->
             <div>
-                <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
-                <label for="lastname">Your Last Name</label>
-                <input type="text" id="lastname" name="lastname">
-
+                <label for="firstname">Your First Name <i span class="required-field">*Required</i></span></label>
+                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35">
+            </div>
+            <div>    
+                <label for="lastname">Your Last Name<i span class="required-field">*Required</i></span></label></label>
+                <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35">
+            <div>
+                <label for="age">Your age <i span class="required-field">*Required</i></span></label>
+                <input type="number" id="age" name="age" min="21" max="99" required>
+                <h5>Contestant must be at least 21 years old to enter.</h5>
+            </div>
                 <!-- TODO: Create a "lastname" input with type "text" -->
             </div>
            <!--Field set can be used to catogorize information into subsection within,
@@ -26,8 +32,8 @@
            <fieldset>
                 <legend>Your Contact information</legend>
                 <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <label for="email">Email<i span class="required-field">*Required</i></span></label></label>
+                    <input type="email" name="email" id="email" required>
                 <div>
                 </div> 
                     <label for="address">Yourn Street Address</label>
